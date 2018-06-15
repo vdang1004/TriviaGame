@@ -72,7 +72,7 @@ $(".questionSet :not('#submitButton')").empty();
 for (var j = 0; j < 8; j++) {
 $('.questions').prepend('<div class="' + questionSet[j].name + '"></div>');
 $(questionSet[j].divClass).append('<div class ="ques-title">' + questionSet[j].question + '</div>');
-// loops through answers for each radio button
+// loop through answers
 for (var i = 0; i <= 3; i++) {
     $(questionSet[j].divClass).append('<input type="radio" name="' + questionSet[j].name + '" value="' + questionSet[j].ans[i] + '"/><label for="' + options[i] + '">' + questionSet[j].ans[i] + '</label>');
 }
@@ -88,8 +88,7 @@ if (seconds <= 0) {
     $('.container').hide();
     var rightAnswers = 0;
     var wrongAnswers = 0;
-    var unAnswered = 0
-    // loop through correctArray & radioName to match html elements & answers
+    // loop through array to check answers
     for (var i = 0; i < 8; i++) {
         if ($('input:radio[name="' + questionSet[i].name + '"]:checked').val() === questionSet[i].correct) {
             rightAnswers++;
@@ -114,13 +113,12 @@ clearInterval(timer);
 })
 }; 
 
-// function to grade quiz once submit button is clicked
+// function to check answers once submit button is clicked
 var displayResults = $('#submitButton').on('click', function() {
 var rightAnswers = 0;
 var wrongAnswers = 0;
-var unAnswered = 0;
 
-// loop through correctArray & radioName to match html elements & answers
+// loop through array to check answer
 for (var i = 0; i < 8; i++) {
 if ($('input:radio[name="' + questionSet[i].name + '"]:checked').val() === questionSet[i].correct) {
     rightAnswers++;
@@ -138,5 +136,4 @@ $('#submitScreen').show();
 $('#correctScreen').append(rightAnswers);
 // display wrongAnswers
 $('#wrongScreen').append(wrongAnswers);
-
 });
