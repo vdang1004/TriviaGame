@@ -1,0 +1,103 @@
+body {
+    background-image: url('../images/milkyway.jpg');
+    font-family: sans-serif;
+    color: black;
+    letter-spacing: 1px;
+}
+
+body .container {
+    background-color: #ffffff;
+    height: 100%;
+    text-align: center;
+    display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    color: black;
+}
+
+#initialScreen {
+    background-color: #ffffff;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.black-background {
+    background-color: #000000;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.box1 {
+    margin: 0 auto;
+    padding: 5%;
+    margin-top: 45%;
+    text-align: center;
+}
+
+.box2 {
+    margin: 0 auto;
+    padding: 4%;
+    text-align: center;
+}
+
+.box3 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+#submitScreen {
+    display: none;
+    background-color: #ffffff;
+    width: 45%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 22px;
+}
+
+#timed {
+    display: none;
+    background-color: #ffffff;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 22px;
+}
+
+.timeLeft {
+    padding: 2%;
+    color: red;
+}
+
+.timeLeft #timeRemain {
+    font-size: 60px;
+}
+
+.questions {
+    font-size: 25px;
+    
+}
+
+header {
+    font-size: 60px;
+    color: black;
+    margin-top: 2%;
+}
+
+label {
+    padding: 1%;
+    color: purple;
+}
